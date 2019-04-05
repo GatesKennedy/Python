@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'AppHome',
     'AppEvents',
     'AppMessages',
+    'polls.apps.PollsConfig',
 ]
 
 MIDDLEWARE = [

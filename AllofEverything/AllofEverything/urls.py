@@ -24,5 +24,6 @@ urlpatterns = [
     path('AppHello/',include('AppHello.urls')),
     path('AppHome/', include('AppHome.urls')),
     path('admin/', admin.site.urls),
+    path('polls/', include('polls.urls')),
 ]
 
