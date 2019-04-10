@@ -16,15 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from AppHello import views
+from polls import views
 
 
 urlpatterns = [
     path('',include('AppHello.urls')),
-    path('users/login/',include('AppHello.urls')),
-    path('AppHello/',include('AppHello.urls')),
-    path('AppHome/', include('AppHome.urls')),
     path('admin/', admin.site.urls),
-    path('polls/', include('polls.urls')),
+    path('polls/',include('polls.urls')),
+    path('users/',include('django.contrib.auth.urls')),
+    path('AppHello/',include('AppHello.urls')),
+    path('AppHome/',include('AppHome.urls')),
     path('news/',include('AppNews.urls')),
 ]
 
