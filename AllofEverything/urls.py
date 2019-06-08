@@ -22,10 +22,9 @@ from polls import views
 urlpatterns = [
     path('',include('AppHello.urls')),
     path('admin/', admin.site.urls),
-    path('polls/',include('polls.urls')),
     path('users/',include('django.contrib.auth.urls')),
-    path('AppHello/',include('AppHello.urls')),
-    path('AppHome/',include('AppHome.urls')),
-    path('news/',include('AppNews.urls')),
-]
-
+    path('settings/',include('AOE-Settings'))
+    path('hello/',include('App-Hello.urls')),
+    path('everything/',include('App-Everything.urls')),
+    path('messages/',include('App-Messages.urls')),
+    path('news/',include('AppNews.urls')),   
