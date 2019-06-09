@@ -43,10 +43,10 @@ INSTALLED_APPS = [
     'AOE_Dashboard',
     'AOE_Settings',
     'AOE_Messages',
+    'AOE_Static',
     #'App_Habits',
     #'App_Transit',
     #'App_Hello',
-    
     'AppNews',
     'AppXray',
 ]

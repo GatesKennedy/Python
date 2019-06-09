@@ -6,5 +6,5 @@ from django.http import HttpRequest, HttpResponse
 def index(request):
 
     dash = ''
-    return render(request, 'AOE_dash/dash.html', {'dash': dash})
-    #return HttpResponse("This is where you Explore. <br> <br> Are you curious?")
+    return render(request, 'dash.html', {'dash': dash})
+    #return HttpResponse("This is wherell you Explore. <br> <br> Are you curious?")
