@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class AppmessagesConfig(AppConfig):
-    name = 'AppMessages'
+    name = 'AOE_Messages'

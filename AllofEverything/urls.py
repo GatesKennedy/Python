@@ -15,16 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from AppHello import views
-from polls import views
+from App_Hello import views
 
 
-urlpatterns = [
-    path('',include('AppHello.urls')),
+urlpatterns = [ 
     path('admin/', admin.site.urls),
-    path('users/',include('django.contrib.auth.urls')),
-    path('settings/',include('AOE-Settings'))
-    path('hello/',include('App-Hello.urls')),
-    path('everything/',include('App-Everything.urls')),
-    path('messages/',include('App-Messages.urls')),
-    path('news/',include('AppNews.urls')),   
+    path('users/',      include('django.contrib.auth.urls')),    
+    path('',            include('App_Hello.urls')),
+    path('hello/',      include('App_Hello.urls')),
+    #path('settings/',   include('AOE_Settings')),
+    path('everything/', include('AOE_Dashboard.urls')),
+    path('messages/',   include('AOE_Messages.urls')),
+    path('news/',       include('AppNews.urls')),
+]   

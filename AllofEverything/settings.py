@@ -31,20 +31,22 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'AppHello',
-    'AppAccounts',
-    'AppHome',
-    'AppEvents',
-    'AppMessages',
-    'polls.apps.PollsConfig',
+    'AOE_Accounts',
+    'AOE_Dashboard',
+    #'AOE_Settings',
+    #'AOE_Time',
+    'AOE_Messages',
+    #'App_Habits',
+    #'App_Transit',
+    #'App_Hello',
     'AppNews',
+    'AppXray',
 ]
 
 MIDDLEWARE = [
