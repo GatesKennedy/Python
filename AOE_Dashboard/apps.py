@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class ApphomeConfig(AppConfig):
-    name = 'AppHome'
+    name = 'AOE_Dashboard'

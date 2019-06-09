@@ -5,5 +5,5 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("This is where you Explore. <br> <br> Are you curious?")
-    
+    return render(request, 'dash.html', {'dash': dash})
+    #return HttpResponse("This is where you Explore. <br> <br> Are you curious?")
