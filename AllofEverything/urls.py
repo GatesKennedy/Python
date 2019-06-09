@@ -23,7 +23,7 @@ urlpatterns = [
     path('users/',      include('django.contrib.auth.urls')),    
     path('',            include('App_Hello.urls')),
     path('hello/',      include('App_Hello.urls')),
-    #path('settings/',   include('AOE_Settings')),
+    path('settings/',   include('AOE_Settings.urls')),
     path('everything/', include('AOE_Dashboard.urls')),
     path('messages/',   include('AOE_Messages.urls')),
     path('news/',       include('AppNews.urls')),

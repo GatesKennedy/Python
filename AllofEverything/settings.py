@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'AOE_Accounts',
     'AOE_Dashboard',
-    #'AOE_Settings',
+    'AOE_Settings',
     #'AOE_Time',
     'AOE_Messages',
     #'App_Habits',
