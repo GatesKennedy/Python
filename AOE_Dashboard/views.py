@@ -1,9 +1,10 @@
-from django.shortcuts import render
-
+from django.shortcuts import render, get_list_or_404
 # Create your views here.
-from django.http import HttpResponse
-
+from django.http import HttpRequest, HttpResponse
+#from .models import Dash_config
 
 def index(request):
-    return render(request, 'dash.html', {'dash': dash})
+
+    dash = ''
+    return render(request, 'AOE_dash/dash.html', {'dash': dash})
     #return HttpResponse("This is where you Explore. <br> <br> Are you curious?")
