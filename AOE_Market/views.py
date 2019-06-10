@@ -4,5 +4,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return render(request, 'hello.html', context=None)
-    #return HttpResponse("Welcome to <br> The All of Everything")
+    return render(request, 'market.html', context=None)
+    

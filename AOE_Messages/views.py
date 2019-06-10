@@ -6,4 +6,5 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse("This is where we talk")
+    return render(request, 'they.html', context=None)
+    #return HttpResponse("This is where we talk")

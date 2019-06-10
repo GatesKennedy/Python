@@ -25,6 +25,7 @@ urlpatterns = [
     path('hello/',      include('App_Hello.urls')),
     path('settings/',   include('AOE_Settings.urls')),
     path('everything/', include('AOE_Dashboard.urls')),
+    path('market/',     include('AOE_Market.urls')),
     path('messages/',   include('AOE_Messages.urls')),
     path('news/',       include('AppNews.urls')),
 ]   
