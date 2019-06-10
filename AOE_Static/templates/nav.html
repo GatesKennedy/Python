@@ -1,21 +1,33 @@
 {% load static from staticfiles %}
 
+<link rel="stylesheet" href="nav.css">
 <nav>
-    <div>
-        <ul>
-            <li>
+    <div id="navCont">
+        <ul id="navList">
+            <li class="navItem">
                 <a href="/everything">everything</a>
             </li>
-            <li>
+            <li class="navItem">
                 <a href="/messages">.they</a>
             </li>
-            <li>
+            <li class="navItem">
                 <a href="/settings">control</a>
             </li>
-            <li>
+            <li class="navItem">
                 <a href="/market">.:market:.</a>
             </li>
         </ul>
     </div>
 </nav>
 <br>
+<style>
+
+#navCont {
+    background-color: #212121;
+    color: #cdcdcd;
+}
+.navItem {
+    display: inline-flex;
+    padding: 20px;
+}
+</style>
